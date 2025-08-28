@@ -2551,7 +2551,8 @@ GameObject:
   - component: {fileID: 536952195}
   - component: {fileID: 536952193}
   - component: {fileID: 536952197}
-  - component: {fileID: 536952198}
+  - component: {fileID: 536952199}
+  - component: {fileID: 536952200}
   m_Layer: 0
   m_Name: player
   m_TagString: Untagged
@@ -2673,8 +2674,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::PlayerController
   speed: 5
   _playerRb: {fileID: 0}
---- !u!61 &536952198
-BoxCollider2D:
+--- !u!58 &536952199
+CircleCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -2708,17 +2709,20 @@ BoxCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
+  m_Radius: 0.5
+--- !u!114 &536952200
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 536952192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff1cfdcc6ed440d4b88fac621255517f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::ScreenLimit
+  player: {fileID: 536952192}
 --- !u!1 &561820541
 GameObject:
   m_ObjectHideFlags: 0
