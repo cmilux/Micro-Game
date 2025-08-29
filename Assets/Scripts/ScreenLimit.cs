@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class ScreenLimit : MonoBehaviour
 {
-    float _xMinRange = -8.3f;
-    float _xMaxRange = 8;
+    public float _xMinRange = -17f;
+    public float _xMaxRange = 16f;
 
     public GameObject player;
 
