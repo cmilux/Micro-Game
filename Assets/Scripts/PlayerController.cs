@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -33,6 +34,11 @@ public class PlayerController : MonoBehaviour
         if (collision.gameObject.CompareTag("Finish"))
         {
             gameOver.SetActive(true);
+        }
+
+        if (collision.gameObject.CompareTag("Obstacle"))
+        {
+            SceneManager.LoadScene("Game");
         }
     }
 }
